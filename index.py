@@ -29,3 +29,60 @@ def greet_and_check_age(name,age):
         print("you are a Minor")
         
 greet_and_check_age("Hodal", 36)
+
+#How concantanatio works
+
+first_name = "Muheto"
+last_name = "Hodal"
+full_name = first_name + " " + last_name
+
+print(full_name)
+
+first_number = 12
+last_number = 12
+# sum_of_two_numbers = first_number + " " + last_number # This should result an error
+sum_of_two_numbers = first_number + last_number 
+
+print(sum_of_two_numbers) 
+
+#Another concantenation is 
+
+message = "This is "
+message +="my message that "
+message +="\n from the heaven"
+
+print(message)
+
+#Using f-String
+
+name ="today class"
+greeting = f"Hello", name
+print(greeting)
+
+#Let us dive into List
+
+words = ["Data", "Science","Is", "fun"]
+
+sentence = " ".join(words)
+
+print(sentence)
+
+student_info ={ "name": "Eric","age":30}
+
+print(student_info)
+
+print("Student Name is : ",student_info["name"])
+
+name = "Hoodal"
+age = 30
+
+info = "My name is {} and I am {} years old.".format(name,age)
+print(info)
+
+#Condition 
+
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))
+
+greet_and_check_age(user_name,user_age)
+
