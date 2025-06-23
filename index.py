@@ -81,8 +81,28 @@ print(info)
 
 #Condition 
 
-user_name = input("Enter your name: ")
-user_age = int(input("Enter your age: "))
+# user_name = input("Enter your name: ")
+# user_age = int(input("Enter your age: "))
 
-greet_and_check_age(user_name,user_age)
+# greet_and_check_age(user_name,user_age)
 
+def greet_user(name):
+    "You are welcome ", print("you are welcome ",name)
+    
+    print("Muheto Hodal")
+    
+greet_user("Keza")
+
+
+#Store Function in a variable
+
+def add_number(a,b):
+    """Function to add Two Number"""
+    return a + b
+my_sum = add_number(40,80)
+print(my_sum)
+
+#Loops
+
+
+    
