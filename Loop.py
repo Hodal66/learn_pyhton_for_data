@@ -129,4 +129,5 @@ while True :
     else:
         print("No try again")
     if(count_number == 2):
+        print("Wawo we count 2 times of pro")
         break
