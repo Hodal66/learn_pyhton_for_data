@@ -114,13 +114,166 @@ text = "  Python Programming  "
 
 #finding and Counting
 
-print(text.find("gram"))
-print(text.count("m"))
+# print(text.find("gram"))
+# print(text.count("m"))
 
-full_name = "Muheto Hodal"
-splited_names = full_name.split()
+# full_name = input("Enter your Full name: ")
+# splited_names = full_name.split()
+# last_name = "Not provided"
 
-first_name = splited_names[0]
-last_name = splited_names[1] 
+# first_name = splited_names[0]
+# if(len(splited_names)>1):
+#     last_name = splited_names[1] 
 
-print(f"You first name is {first_name}, your last name is {last_name}")
+# print(f"You first name is {first_name}, your last name is {last_name}")
+
+
+#CREATING LISTS
+
+#EMPTY_LISTS
+
+# empty_list = []
+# empty_list2 = list()
+# print(empty_list)
+# print(empty_list2)
+
+#LIST WITH DATA
+# numbers = [1,2,3,4,5]
+# fruits = ['apple','banana','orange']
+# mixed = [1, 'hello', 3.14, True, [1,2,3]]
+# print(fruits)
+# print(mixed[-1])
+
+#LIST FROM A RANGE
+
+range_list = list(range(1,10))
+# print(range_list)
+
+#ACCESSING LIST ELEMENTS
+fruits = ['apple','banana','orange','grape','kiwi']
+# print(fruits)
+# print(fruits[0])
+# print(fruits[-1])
+# print(fruits[-2])
+
+#SLICING
+
+# print(fruits)
+# print(fruits[1:4])
+# print(fruits[:3])
+# print(fruits[2:])
+# print(fruits[::2])
+# print(fruits[::-1])
+
+#MODIFYING LIST
+
+fruits = ['apple','banana','orange','umugati']
+
+#Adding Element
+
+# fruits.append('grape')
+# fruits.insert(1, 'kiwi')
+# fruits.extend(['mango','peach'])
+# print(fruits)
+
+# fruits.remove('banana')
+# fruits.remove(input("Enter to remove: "))
+# print(fruits)
+# number_of_contents = int(input("How many record you want to insert :"))
+# i=1
+# if(number_of_contents > 0):
+#   while i <= number_of_contents :
+#     fruits.insert(1, input("Enter to Add: "))
+#     i=i+1
+# print(f"The Updated List are : {fruits}")
+
+# print(fruits)
+
+#REMOVING ELEMENTS IN THE LIST
+
+# fruits.remove('banana')
+# print(fruits)
+# popped = fruits.pop()
+# print(fruits)
+# print(popped)
+# popped_index = fruits.pop(1)
+# print(popped_index)
+# print(fruits)
+# del fruits[1]
+# print(fruits)
+# print(fruits.clear())
+
+#MODIFYING ELEMENTS
+
+# print(fruits)
+# fruits[0] = 'pineapple'
+# print(fruits)
+# fruits[1:4] = ['cherry','plum','umuganura','umwenda','urubuto']
+# fruits.extend(['burigihe','burimunsi'])
+# print(fruits)
+
+#LIST METHODS AND OPERATION
+
+numbers = [3,1,4,1,5,9,2,6]
+
+#SORTING AND REVERTING
+
+# numbers.sort()
+# numbers.sort(reverse=True)
+# numbers.reverse()
+
+# print(numbers)
+
+#DON'T MODIFY ORIGINAL 
+
+sorted_nums = sorted(numbers)
+# print(f"Sorted List : {sorted_nums}")
+# print(f"Orginal LIst : {numbers}")
+# reversed_nums = list(reversed(numbers))
+# print(f"List Of Reserved : {reversed_nums}")
+
+# index = sorted_nums.index(4)
+# count = numbers.count(1)
+# print(count)
+
+# print(len(numbers))
+# print(sum(numbers))
+# print(max(numbers))
+# print(min(numbers))
+
+#LIST OF COMPLEHENSIONS
+
+#BASIC LIST OF COMPREHENSION
+
+# squares = []
+# for x in range(10):
+#     squares.append(x**2)
+# print(squares)
+
+# squares = [x**2 for x in range(10)]
+# print(squares)
+# even_square = [x**2 for x in range(10) if x % 2 == 0]
+# print(even_square)
+
+# words = ['python','java','javascript']
+
+# upper_words = [word.upper() for word in words]
+# print(words)
+# print(upper_words)
+
+# matrix = [[i*j for j in range(3)] for i in range(3)]
+
+# print(matrix)
+number_of_grades = int(input("How Many Number of grades : "))
+list_of_grades = []
+if(number_of_grades>0):
+    i=1
+    while i <= number_of_grades : 
+        list_of_grades.append(int(input(f"Enter {i} Marks :")))
+        i = i + 1
+    print(list_of_grades)
+    average = sum(list_of_grades) / number_of_grades
+    maximum_grade = max(list_of_grades)
+    lowest_grade = min(list_of_grades)
+    print("You have Entered {} Number of Marks and their Average is {}, The Highest Marks is {} the Lowest Marks is {} ".format(number_of_grades, average, maximum_grade, lowest_grade))
+print("You are welcome to this new Tutorial!!!")
