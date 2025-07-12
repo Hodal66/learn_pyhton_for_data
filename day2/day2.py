@@ -264,16 +264,61 @@ sorted_nums = sorted(numbers)
 # matrix = [[i*j for j in range(3)] for i in range(3)]
 
 # print(matrix)
-number_of_grades = int(input("How Many Number of grades : "))
-list_of_grades = []
-if(number_of_grades>0):
-    i=1
-    while i <= number_of_grades : 
-        list_of_grades.append(int(input(f"Enter {i} Marks :")))
-        i = i + 1
-    print(list_of_grades)
-    average = sum(list_of_grades) / number_of_grades
-    maximum_grade = max(list_of_grades)
-    lowest_grade = min(list_of_grades)
-    print("You have Entered {} Number of Marks and their Average is {}, The Highest Marks is {} the Lowest Marks is {} ".format(number_of_grades, average, maximum_grade, lowest_grade))
-print("You are welcome to this new Tutorial!!!")
+# number_of_grades = int(input("How Many Number of grades : "))
+# list_of_grades = []
+# if(number_of_grades>0):
+#     i=1
+#     while i <= number_of_grades : 
+#         list_of_grades.append(int(input(f"Enter {i} Marks :")))
+#         i = i + 1
+#     print(list_of_grades)
+#     average = sum(list_of_grades) / number_of_grades
+#     maximum_grade = max(list_of_grades)
+#     lowest_grade = min(list_of_grades)
+#     print("You have Entered {} Number of Marks and their Average is {}, The Highest Marks is {} the Lowest Marks is {} ".format(number_of_grades, average, maximum_grade, lowest_grade))
+# print("You are welcome to this new Tutorial!!!")
+
+#CREATING A TUPLES
+
+#EMPTY TUPPLE
+
+empty_tuple = ()
+empty_list = []
+empty_tuple2 = tuple()
+
+#TUPLES WITH DATA
+coordinates = (10,20)
+rgb_color = (255, 128, 0)
+mixed_tuple = (1, 'hello', 3.14, True)
+# print(coordinates)
+# print(rgb_color)
+# print(mixed_tuple)
+
+#SINGLE ELEMENT TUPLE (COMMA IS REQUIRED)
+
+single = (42,)
+single_2 = 50,
+print(single, single_2)
+
+#TUPLE WITHOUT PARANTHESES (TUPLE PACKING)
+
+point = 10, 20
+print(type(point))
+print(point)
+
+# ACCESSING TUPLE ELEMENT
+
+new_coordinates = (10,20,30)
+
+print(new_coordinates[0])
+print(new_coordinates[-1])
+
+#SLICING (SAME AS LIST)
+
+print(new_coordinates[1:])
+
+#TUPLE UNPACKING
+
+x,y,z = new_coordinates
+
+print(f"x={x}, y={y}, z={z}")
